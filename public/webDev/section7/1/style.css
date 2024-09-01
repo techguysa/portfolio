@@ -1,0 +1,16 @@
+/* Write your code here: */
+
+/* change font color for multiple elements using multiple selectors */
+h1, h2{color: blueviolet;}
+
+/* change only the font color for a child element */
+.box > p {color: firebrick;}
+
+/* change the font color of the descendent of the ancestor (ancestor descendent) */
+.box li {color: blue;}
+
+/* change the font color using chaining (selectorselector) */
+li.done{color: seagreen;}
+
+/* change the font size using combining combiners (selector selectorselector) */
+ul p.done{font-size: .5rem;}
