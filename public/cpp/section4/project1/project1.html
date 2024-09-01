@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+    <head>
+        <title>My Portfolio - CPP</title>
+        <meta charset = "utf-8">
+        <link rel = "stylesheet" href = "https://techguysa.github.io/portfolio/style.css">     
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Nerko+One&display=swap" rel="stylesheet">
+    </head>
+    <body>
+      <div class = "links">
+        <a href = "https://techguysa.github.io/portfolio/">Home</a>
+        <a href = "https://techguysa.github.io/portfolio/public/webDev/webDev.html">Wev Development</a>
+        <a href = "https://techguysa.github.io/portfolio/public/cpp/cpp.html">Beginning C++</a>
+        <a href = "https://techguysa.github.io/portfolio/public/java/java.html">Java 17</a>
+        <a href = "https://techguysa.github.io/portfolio/public/blender/3d.html">Blender 3D</a>
+        <a href = "https://techguysa.github.io/portfolio/public/photo/photo.html">Photography</a>
+    </div>
+
+    <!-- h1 title will be written as Section # - Project # -->
+    <h1 class = "title">Section 4 - Project 1</h1>     
+    <div class = "code">
+      <p>
+        <!-- this section contains the question or reason for the coding exercise. -->
+         This exercise was designed to instruct the student on how to begin coding in C++, initiate an int, display text, request a number to be entered into the code and then display a preset text to the user.
+      </p>
+      <pre>
+        <!-- this section contains the code written for the exercise -->
+        #include <iostream>
+          using namespace std;
+                    
+          int main(){
+             int favNumber;
+             cout << "Enter your favorite number between 1 and 100: " << endl;
+             cin >> favNumber;
+             cout << "Wow thats my favorite number too!" << endl;
+             return 0;
+          }
+      </pre>
+      <div class = "links">
+        <a href = "./main.cpp">Source Code</a> <!-- this link provides the user the ability to download the source code to run or review on their own machine -->
+        <a href = "./main.exe">Executable</a> <!-- this link provides the user the ability to download the .exe of the project-->
+      </div>      
+    </div>
+    </body>
+</html>
