@@ -1,0 +1,21 @@
+ol {
+  margin-left: -40px;
+  margin-top: -20px;
+  list-style-position: inside;
+}
+
+/* Write your CSS below, don't change the rules above. */
+
+p {color: red;}
+
+/* class selection begins with . */
+.note{font-size:20px;}
+
+/* id selection begins with a # */
+#id-selector-demo{color: green;}
+
+/* you can select specific elements using a particular attribute tag with [attribute-here] */
+li[value="4"]{color: blue;}
+
+/* you can set universal css code by not including any elements */
+{text-align: center;}

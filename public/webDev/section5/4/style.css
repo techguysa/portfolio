@@ -1,0 +1,12 @@
+/* step 2: styling words to correct colors using id selector */
+#red{color: red;}
+#blue{color: blue;}
+#orange{color: orange;}
+#green{color: green;}
+#yellow{color: yellow;}
+
+/* step 3: adding font-weight using class selector */
+.color-title{font-weight: normal;}
+
+/* step 4: convert all images to 200x200 px using img element selector*/
+img{height: 200px; width: 200px;}
