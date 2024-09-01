@@ -1,11 +1,40 @@
-html{background-color: ;}
-
-div{width: 90%}
-
-.links{
-    background-color: ;
-    padding: 0;
-    border: 0;  
-    text-align: center;  
+/* css modifiers for entire body of the pages */
+body{
+    background-color: #16325B;
+    font-family: "Crimson Text", serif;
+    width: 95%;
+    color: #FFDC7F;
+    a{color: #78B7D0;}
 }
 
+/* css modifiers for single selection modification */
+
+
+/* css modifiers for classes */
+.links{
+    padding: 10px 0px;
+    border: 1px;  
+    text-align: center;  
+    a{
+        padding: 0px 5px; color: #78B7D0;
+    }
+}
+
+.title{
+    font-weight: 700; 
+    text-align: center;
+}
+
+.section{
+    h4{
+        text-align: center;
+        font-size: large;
+    } 
+    background-color: #227B94;   
+    border: 3px solid black; 
+    width: 80%;
+    margin: 10px;
+    padding: 5px         
+}
+
+/* css modifiers for id's */
