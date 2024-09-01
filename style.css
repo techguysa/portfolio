@@ -9,7 +9,8 @@ body{
 
 /* css modifiers for single selection modification */
 
-
+footer{text-align: center;}
+.selfImage{padding-top: 5px;}
 /* css modifiers for classes */
 .links{
     padding: 10px 0px;
