@@ -18,7 +18,7 @@
         <a href = "https://techguysa.github.io/portfolio/public/cpp/cpp.html">Beginning C++</a>
     </div>
 
-    <h1 class = "title">Variables</h1>     
+    <h1 class = "title">Starting out with Expressions</h1>     
     <div class = "explanation">
       <p>
         The code generated per during the lesson is displayed here along with any executable that was generated if available.
@@ -27,46 +27,28 @@
     <div class = "code">
       <pre>
         <!-- this section contains the code written for the exercise -->
-         *Initiate and assign a value to a variable
-         int myFirstNumber = 5;
-         System.out.print(myFirstNumber);
-         Output: 5 
-         
-         *Change value of variable to 10
-         myFirstNumber = 10;
-         System.out.print(myFirstNumber);
-         Output: 10 
-         
-         *Change value of variable to 1000
-         myFirstNumber = 1000;
-         System.out.print(myFirstNumber);
-         Output: 1000
-         
-         *Use /list to display all code entered into jshell
-         /list 
-         Output:
-            1 : System.out.print("Hello World")
-            2 : System.out.print("Hello World"); 
-            3 : System.out.print("Hello Team");
-            4 : System.out.print("Hello Team");
-            5 : System.out.print("Hello Team"
-            );
-            6 : int myFirstNumber = 5;
-            7 : System.out.print(myFirstNumber);
-            8 : myFirstNumber = 10;
-            9 : System.out.print(myFirstNumber);
-            10 : myFirstNumber = 1000;
-            11 : System.out.print(myFirstNumber); 
-
-        *Using math while assigning values to variables
-        myFirstNumber = 10 + 5;
-        System.out.print(myFirstNumber);
-        Output: 15 
+         *Initialize integers
+        int myFirstNumber = (10 + 5) + (2 * 10); 
+        int mySecondNumber = 12;        
+        int myThirdNumber = 6;
         
-        *myFirstNumber = (10 + 5) + (2 * 10);
-        System.out.print(myFirstNumber);
-        Output: 35
-      </pre>      
+        *Use var to display variables and their info
+        /var
+        int myFirstNumber = 35
+        int mySecondNumber = 12
+        int myThirdNumber = 6
+
+        *use expressions to change the value of an integer
+        myThirdNumber = myFirstNumber * 2;
+        myTotal = myFirstNumber + mySecondNumber + myThirdNumber;
+        
+        *Initialize more integers
+        int myLastOne = 1000;
+        myTotal = myLastOne - myTotal;
+
+        *Display calculation on screen
+        System.out.print(myTotal);
+      </pre>         
     </div>
     </body>
 </html>
