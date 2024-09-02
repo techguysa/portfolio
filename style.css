@@ -11,6 +11,8 @@ body{
 
 footer{text-align: center;}
 .selfImage{padding-top: 5px;}
+pre{text-wrap: wrap;}
+
 /* css modifiers for classes */
 .links{
     padding: 10px 0px;
