@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+    <head>
+        <title>My Portfolio - Java 17</title>
+        <meta charset = "utf-8">
+        <link rel = "stylesheet" href = "https://techguysa.github.io/portfolio/style.css">     
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Nerko+One&display=swap" rel="stylesheet">
+    </head>
+    <body>
+      <div class = "links">
+        <a href = "https://techguysa.github.io/portfolio/">Home</a>
+        <a href = "https://techguysa.github.io/portfolio/public/webDev/webDev.html">Wev Development</a>
+        <a href = "https://techguysa.github.io/portfolio/public/java/java.html">Java 17</a>
+        <a href = "https://techguysa.github.io/portfolio/public/blender/3d.html">Blender 3D</a>
+        <a href = "https://techguysa.github.io/portfolio/public/photo/photo.html">Photography</a>
+        <a href = "https://techguysa.github.io/portfolio/public/cpp/cpp.html">Beginning C++</a>
+    </div>
+
+    <h1 class = "title">byte, short, long &amp; width</h1>     
+    <div class = "explanation">
+      <p>
+        The code generated during the lesson is displayed here along with any executable that was generated if available.
+      </p>
+    </div>
+    <div class = "code">
+      <pre>
+        <!-- this section contains the code written for the exercise -->
+         *Getting the min and max range of integer types and displaying them on screen.
+         System.out.print("Integer Value Range (" + Integer.MIN_VALUE + " to " + Integer.MAX_VALUE + ")");
+         Output: Integer Value Range (-2147483648 to 2147483647)
+         System.out.print("Byte Value Range (" + Byte.MIN_VALUE + " to " + Byte.MAX_VALUE + ")");
+         Output: Byte Value Range (-128 to 127)
+         System.out.print("Short Value Range (" + Short.MIN_VALUE + " to " + Short.MAX_VALUE + ")");
+         Output: Short Value Range (-32768 to 32767)
+         
+         *Widths of integer types
+         byte is 8 bits (-128 to 127) and can store 246 numbers
+         short is 16 bits (-32768 to 32767) and can store a large range of numbers
+         int is 32 bits (-2147483648 to 2147483647) and has a much larger range
+         long is 64 bits (-9223372036854775808 to 9223372036854775807) and holds an even greater range than the previous
+
+         *reviewing Long data types
+         *forcing a value to a long data type
+         long myLongValue = 100L; 
+
+         System.out.print("A long has a width of " + Long.SIZE);
+         Output: A long has a width of 64
+
+         System.out.print("Long Value Range (" + Long.MIN_VALUE + " to " + Long.MAX_VALUE + ")");
+         Outrange: Long Value Range (-9223372036854775808 to 9223372036854775807)
+      </pre>        
+    </div>
+    </body>
+</html>

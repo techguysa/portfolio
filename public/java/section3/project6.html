@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+    <head>
+        <title>My Portfolio - Java 17</title>
+        <meta charset = "utf-8">
+        <link rel = "stylesheet" href = "https://techguysa.github.io/portfolio/style.css">     
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Nerko+One&display=swap" rel="stylesheet">
+    </head>
+    <body>
+      <div class = "links">
+        <a href = "https://techguysa.github.io/portfolio/">Home</a>
+        <a href = "https://techguysa.github.io/portfolio/public/webDev/webDev.html">Wev Development</a>
+        <a href = "https://techguysa.github.io/portfolio/public/java/java.html">Java 17</a>
+        <a href = "https://techguysa.github.io/portfolio/public/blender/3d.html">Blender 3D</a>
+        <a href = "https://techguysa.github.io/portfolio/public/photo/photo.html">Photography</a>
+        <a href = "https://techguysa.github.io/portfolio/public/cpp/cpp.html">Beginning C++</a>
+    </div>
+
+    <h1 class = "title">Casting in Java</h1>     
+    <div class = "explanation">
+      <p>
+        The code generated during the lesson is displayed here along with any executable that was generated if available.
+      </p>
+    </div>
+    <div class = "code">
+      <pre>
+        <!-- this section contains the code written for the exercise -->
+         *assigning variables
+         short myMinShortValue = Short.MIN_VALUE; int myMinIntValue = Integer.MIN_VALUE;
+         myMinShortValue ==> -32768
+         myMinIntValue ==> -2147483648
+
+         byte myMinByteValue = Byte.MIN_VALUE, myMaxByteValue = Byte.MAX_VALUE;
+         myMinByteValue ==> -128
+         myMaxByteValue ==> 127
+
+         short firstShort = 1; int firstInteger = 2;
+         firstShort ==> 1
+         firstInteger ==> 2
+
+         byte firstByte = 1, secondByte = 2;
+         firstByte ==> 1
+         secondByte ==> 2
+
+         *performing math using jshell
+         int myTotal = (myMinIntValue / 2);
+         myTotal ==> -1073741824
+
+         byte myNewByteValue = (myMinByteValue / 2);
+         Error:
+         incompatible types: possible lossy conversion from int to byte
+         byte myNewByteValue = (myMinByteValue / 2);
+                                ^----------------^
+         *displays an error as the Java compiler does not attempt to evaluate the value in a variable when it's used in calcuation, so it doesn't know if the value fits and displays an error.
+         If the calcuation uses literal values then Java can figure out the end result at compile time and know whether it fits or not
+         such as - byte myNewByteValue = (-128 / 2);
+         an int result is being returned from the calcuation in both examples but Java knows the returned value can fit into a byte with the second calcuation.
+
+         *cast the value into a byte by using the following example
+         byte myNewByteValue = (byte) (myMinByteValue / 2);
+         myNewByteValue ==> -64
+         short myNewShortValue = (short) (myMinShortValue / 2);
+         myNewShortValue ==> -16384
+
+         ***Java defaults to int
+      </pre>        
+    </div>
+    </body>
+</html>
